@@ -1,0 +1,12 @@
+#logo{
+  font-size: 50px;
+  font-family: fantasy;
+  margin-right: 49px;
+  font-style: oblique;
+  color: #20BBD6;
+}
+
+.fixed.menu{
+  padding: 20px 0;
+  align-items: center;
+}
