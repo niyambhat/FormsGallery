@@ -8,8 +8,10 @@ const [formFields, setFormFields] = useState({});
 const [valid, setValid] = useState();
 const [error, setError] = useState();
 
-const formUtilities =(value:any)=>{
-  setFormFields(value);
+const formUtilities =(ff:any, v:any, e:any)=>{
+  setFormFields(ff);
+  setValid(v)
+  setError(e)
 }
   return (
     <>
@@ -18,7 +20,7 @@ const formUtilities =(value:any)=>{
       <HomeLoanApplicationForm initialValue ={formFields} formUtilities={formUtilities}/>
       </Grid.Column>
       <Grid.Column>
-     <ShowForm fields={formFields}/>
+     <ShowForm fields={formFields} errors={error}/>
      </Grid.Column>
     </Grid>
     </>

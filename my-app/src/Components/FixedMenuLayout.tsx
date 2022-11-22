@@ -21,9 +21,9 @@ function FixedMenuLayout() {
         <Menu.Item as='a' header>
                 Forms Gallery
         </Menu.Item>
-        <Menu.Item as='a'>Bank</Menu.Item>
+        <Menu.Item as={Link} to="/HomeLoanApplication">Home Loan Application</Menu.Item>
 
-        <Dropdown item simple text='Banking'>
+        {/* <Dropdown item simple text='Banking'>
           <Dropdown.Menu>
             <Dropdown.Item as={Link} to="/HomeLoanApplication"> Home Loan Application</Dropdown.Item>
             <Dropdown.Item>List Item</Dropdown.Item>
@@ -39,7 +39,7 @@ function FixedMenuLayout() {
             </Dropdown.Item>
             <Dropdown.Item>List Item</Dropdown.Item>
           </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
       </Container>
     </Menu>
   )
